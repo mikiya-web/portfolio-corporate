@@ -1488,7 +1488,7 @@ FV
 .service-hero{
     position:relative;
     height:520px;
-    background:url("../image-service/img01.png") center/cover no-repeat;
+    background:url("image-service/img01.png") center/cover no-repeat;
     display:flex;
     align-items:center;
 }
