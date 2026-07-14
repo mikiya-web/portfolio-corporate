@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BuildRise(Dummy site)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="image-top/img07.png" alt="BuildRise株式会社">
+            </a>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="about.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="works.html">施工事例</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </nav>
+
+        <a href="contact.html" class="header__contact">
+            <span class="material-symbols-outlined">mail</span>
+            お問い合わせ
+        </a>
+        <button class="header__burger" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header__drawer">
+
+            <nav class="drawer__nav">
+
+                <ul class="drawer__list">
+
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="works.html">施工事例</a></li>
+                    <li><a href="staff.html">スタッフ紹介</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <div class="header__overlay"></div>
+    </header>
+    <main class="works-page">
+
+        <!-- 下層ページメインビジュアル -->
+        <section class="works-hero">
+            <div class="works-hero__image">
+                <img src="./image-works/img01.png" alt="夜間にライトアップされたBuildRise施工のオフィスビル">
+            </div>
+
+            <div class="works-hero__overlay"></div>
+
+            <div class="works-hero__inner">
+                <div class="works-hero__content">
+                    <p class="works-hero__english">WORKS</p>
+
+                    <h1 class="works-hero__title">施工事例</h1>
+
+                    <span class="works-hero__line"></span>
+
+                    <p class="works-hero__description">
+                        BuildRiseが手がけた建築・リフォームの事例を<br>
+                        ご紹介します。<br>
+                        お客様の理想をカタチにした、多彩な実績を<br>
+                        ご覧ください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- パンくず -->
+        <div class="works-breadcrumb">
+            <div class="works-breadcrumb__inner">
+                <ol class="works-breadcrumb__list">
+                    <li class="works-breadcrumb__item">
+                        <a href="./index.html">HOME</a>
+                    </li>
+
+                    <li class="works-breadcrumb__item" aria-current="page">
+                        施工事例
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- 施工事例一覧 -->
+        <section class="works-list">
+            <div class="works-list__inner">
+
+                <!-- カテゴリー -->
+                <aside class="works-category">
+                    <div class="works-category__heading">
+                        <p class="works-category__english">CATEGORY</p>
+                        <h2 class="works-category__title">カテゴリー</h2>
+                        <span class="works-category__line"></span>
+                    </div>
+
+                    <ul class="works-category__list">
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button is-active" data-category="all">
+                                <span>すべて</span>
+                            </button>
+                        </li>
+
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button" data-category="office">
+                                <span>オフィス・事務所</span>
+                                <span class="works-category__count">12</span>
+                            </button>
+                        </li>
+
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button" data-category="shop">
+                                <span>店舗・商業施設</span>
+                                <span class="works-category__count">15</span>
+                            </button>
+                        </li>
+
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button" data-category="medical">
+                                <span>医療・福祉施設</span>
+                                <span class="works-category__count">8</span>
+                            </button>
+                        </li>
+
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button" data-category="factory">
+                                <span>工場・倉庫</span>
+                                <span class="works-category__count">10</span>
+                            </button>
+                        </li>
+
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button" data-category="house">
+                                <span>住宅・リフォーム</span>
+                                <span class="works-category__count">18</span>
+                            </button>
+                        </li>
+
+                        <li class="works-category__item">
+                            <button type="button" class="works-category__button" data-category="other">
+                                <span>その他</span>
+                                <span class="works-category__count">5</span>
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- カード一覧 -->
+                <div class="works-gallery">
+                    <div class="works-gallery__grid">
+
+                        <!-- 01 -->
+                        <article class="works-card" data-category="office">
+                            <a href="./works-detail01.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img02.png" alt="株式会社アクティブ本社ビル">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        オフィス・事務所
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        株式会社アクティブ 本社ビル
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2024-04">
+                                            2024.04
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 02 -->
+                        <article class="works-card" data-category="shop">
+                            <a href="./works-detail02.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img03.png" alt="Cafe & Bar Rise">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        店舗・商業施設
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        Cafe &amp; Bar Rise
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2024-03">
+                                            2024.03
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 03 -->
+                        <article class="works-card" data-category="medical">
+                            <a href="./works-detail03.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img04.png" alt="ひかり整形外科クリニック">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        医療・福祉施設
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        ひかり整形外科クリニック
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2024-02">
+                                            2024.02
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 04 -->
+                        <article class="works-card" data-category="factory">
+                            <a href="./works-detail04.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img05.png" alt="株式会社メタルテックの倉庫棟">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        工場・倉庫
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        株式会社メタルテック 倉庫棟
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2024-01">
+                                            2024.01
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 05 -->
+                        <article class="works-card" data-category="house">
+                            <a href="./works-detail05.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img06.png" alt="木の温もりを感じる家">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        住宅・リフォーム
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        木の温もりを感じる家
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2023-12">
+                                            2023.12
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 06 -->
+                        <article class="works-card" data-category="house">
+                            <a href="./works-detail06.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img07.png" alt="家族がつながる二世帯住宅">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        住宅・リフォーム
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        家族がつながる二世帯住宅
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2023-11">
+                                            2023.11
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 07 -->
+                        <article class="works-card" data-category="shop">
+                            <a href="./works-detail07.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img08.png" alt="アパレルショップGraph">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        店舗・商業施設
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        アパレルショップ Graph.
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2023-10">
+                                            2023.10
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 08 -->
+                        <article class="works-card" data-category="office">
+                            <a href="./works-detail08.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img09.png" alt="株式会社イノベイト大阪支店">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        オフィス・事務所
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        株式会社イノベイト 大阪支店
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2023-09">
+                                            2023.09
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- 09 -->
+                        <article class="works-card" data-category="house">
+                            <a href="./works-detail09.html" class="works-card__link">
+                                <div class="works-card__image">
+                                    <img src="./image-works/img10.png" alt="築50年の住宅のフルリノベーション">
+                                </div>
+
+                                <div class="works-card__body">
+                                    <p class="works-card__category">
+                                        住宅・リフォーム
+                                    </p>
+
+                                    <h3 class="works-card__title">
+                                        築50年のフルリノベーション
+                                    </h3>
+
+                                    <div class="works-card__bottom">
+                                        <time class="works-card__date" datetime="2023-08">
+                                            2023.08
+                                        </time>
+
+                                        <span class="works-card__arrow">
+                                            →
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+
+                    <!-- ページネーション -->
+                    <nav class="works-pagination" aria-label="施工事例ページ">
+                        <a href="#" class="works-pagination__arrow" aria-label="前のページ">
+                            «
+                        </a>
+
+                        <a href="#" class="works-pagination__number is-current" aria-current="page">
+                            1
+                        </a>
+
+                        <a href="#" class="works-pagination__number">
+                            2
+                        </a>
+
+                        <a href="#" class="works-pagination__number">
+                            3
+                        </a>
+
+                        <span class="works-pagination__dots">
+                            …
+                        </span>
+
+                        <a href="#" class="works-pagination__number">
+                            6
+                        </a>
+
+                        <a href="#" class="works-pagination__arrow" aria-label="次のページ">
+                            »
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer__inner">
+
+            <div class="footer__company">
+
+                <img src="image-top/img07.png" alt="BuildRise株式会社">
+
+                <p>
+                    〒123-4567<br>
+                    東京都渋谷区渋谷1-2-3 渋谷第一ビル5F<br>
+                    TEL：03-1234-5678　
+                    FAX：03-1234-5679
+                </p>
+
+            </div>
+
+            <ul class="footer__nav">
+                <li><a href="about.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="works.html">施工事例</a></li>
+            </ul>
+
+            <ul class="footer__nav">
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+
+            <ul class="footer__nav">
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="sitemap.html">サイトマップ</a></li>
+            </ul>
+
+            <div class="footer__sns">
+
+                <p>Follow Us</p>
+
+                <div>
+
+                    <a href="#">
+                        <img src="image-top/img12.png" alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="image-top/img13.png" alt="Facebook">
+                    </a>
+
+                    <a href="#">
+                        <img src="image-top/img14.png" alt="YouTube">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="footer__copy">
+            © BuildRise Co., Ltd. All Rights Reserved.
+        </p>
+
+        <a href="#" class="page-top">
+            PAGE<br>TOP
+        </a>
+
+    </footer>
+</body>
+
+</html>

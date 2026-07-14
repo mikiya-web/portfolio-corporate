@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BuildRise(Dummy site)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="image-top/img07.png" alt="BuildRise株式会社">
+            </a>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="about.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="works.html">施工事例</a></li>
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </nav>
+
+        <a href="contact.html" class="header__contact">
+            <span class="material-symbols-outlined">mail</span>
+            お問い合わせ
+        </a>
+        <button class="header__burger" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header__drawer">
+
+            <nav class="drawer__nav">
+
+                <ul class="drawer__list">
+
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="works.html">施工事例</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <div class="header__overlay"></div>
+    </header>
+    <main class="service-page">
+
+        <!-- 下層ページFV -->
+        <section class="service-hero">
+            <div class="service-hero__overlay"></div>
+
+            <div class="service-hero__inner">
+                <p class="service-hero__en">SERVICE</p>
+
+                <h1 class="service-hero__title">
+                    事業内容
+                </h1>
+
+                <p class="service-hero__lead">
+                    空間に価値を、未来に誇れる建築を。
+                </p>
+            </div>
+        </section>
+
+        <!-- パンくず -->
+        <nav class="service-breadcrumb" aria-label="パンくずリスト">
+            <ol class="service-breadcrumb__list">
+                <li class="service-breadcrumb__item">
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li class="service-breadcrumb__item" aria-hidden="true">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </li>
+
+                <li class="service-breadcrumb__item">
+                    <span>事業内容</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- 私たちの事業について -->
+        <section class="service-introduction">
+            <div class="service-introduction__inner">
+
+                <div class="service-heading">
+                    <p class="service-heading__en">
+                        OUR SERVICE
+                    </p>
+
+                    <h2 class="service-heading__title">
+                        私たちの事業について
+                    </h2>
+
+                    <span class="service-heading__line"></span>
+                </div>
+
+                <div class="service-introduction__body">
+                    <p>
+                        BuildRiseは、建築の企画・設計から施工、アフターメンテナンスまでを
+                        一貫して行う総合建築会社です。
+                    </p>
+
+                    <p>
+                        住宅、商業施設、集合住宅、リノベーションなど多様なプロジェクトに対応し、
+                        お客様の理想をカタチにする最適なソリューションを提供します。
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 事業領域 -->
+        <section class="service-fields">
+            <div class="service-fields__inner">
+
+                <div class="service-heading">
+                    <p class="service-heading__en">
+                        BUSINESS FIELD
+                    </p>
+
+                    <h2 class="service-heading__title">
+                        事業領域
+                    </h2>
+
+                    <span class="service-heading__line"></span>
+                </div>
+
+                <div class="service-fields__list">
+
+                    <!-- 01 -->
+                    <article class="service-card">
+                        <a href="service-house.html" class="service-card__link">
+
+                            <div class="service-card__image">
+                                <img src="image-service/img02.png" alt="注文住宅">
+                            </div>
+
+                            <div class="service-card__body">
+                                <div class="service-card__heading">
+                                    <p class="service-card__number">
+                                        01
+                                    </p>
+
+                                    <h3 class="service-card__title">
+                                        注文住宅
+                                    </h3>
+                                </div>
+
+                                <p class="service-card__text">
+                                    お客様のライフスタイルや価値観に寄り添い、
+                                    理想の住まいを一棟一棟丁寧につくり上げます。
+                                </p>
+
+                                <span class="service-card__arrow material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <!-- 02 -->
+                    <article class="service-card">
+                        <a href="service-commercial.html" class="service-card__link">
+
+                            <div class="service-card__image">
+                                <img src="image-service/img03.png" alt="商業施設・店舗建築">
+                            </div>
+
+                            <div class="service-card__body">
+                                <div class="service-card__heading">
+                                    <p class="service-card__number">
+                                        02
+                                    </p>
+
+                                    <h3 class="service-card__title">
+                                        商業施設・店舗建築
+                                    </h3>
+                                </div>
+
+                                <p class="service-card__text">
+                                    集客力やブランド価値を高める空間づくりを、
+                                    企画から設計・施工までトータルでサポートします。
+                                </p>
+
+                                <span class="service-card__arrow material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <!-- 03 -->
+                    <article class="service-card">
+                        <a href="service-apartment.html" class="service-card__link">
+
+                            <div class="service-card__image">
+                                <img src="image-service/img04.png" alt="集合住宅">
+                            </div>
+
+                            <div class="service-card__body">
+                                <div class="service-card__heading">
+                                    <p class="service-card__number">
+                                        03
+                                    </p>
+
+                                    <h3 class="service-card__title">
+                                        集合住宅
+                                    </h3>
+                                </div>
+
+                                <p class="service-card__text">
+                                    安心・快適・長持ちする集合住宅を、
+                                    土地の特性に合わせてご提案・施工します。
+                                </p>
+
+                                <span class="service-card__arrow material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="service-card">
+                        <a href="service-renovation.html" class="service-card__link">
+
+                            <div class="service-card__image">
+                                <img src="image-service/img05.png" alt="リノベーション">
+                            </div>
+
+                            <div class="service-card__body">
+                                <div class="service-card__heading">
+                                    <p class="service-card__number">
+                                        04
+                                    </p>
+
+                                    <h3 class="service-card__title">
+                                        リノベーション
+                                    </h3>
+                                </div>
+
+                                <p class="service-card__text">
+                                    既存建物に新たな価値を吹き込み、
+                                    暮らしやすく、魅力ある空間へと再生します。
+                                </p>
+
+                                <span class="service-card__arrow material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <!-- 05 -->
+                    <article class="service-card">
+                        <a href="service-office.html" class="service-card__link">
+
+                            <div class="service-card__image">
+                                <img src="image-service/img06.png" alt="オフィス・事務所">
+                            </div>
+
+                            <div class="service-card__body">
+                                <div class="service-card__heading">
+                                    <p class="service-card__number">
+                                        05
+                                    </p>
+
+                                    <h3 class="service-card__title">
+                                        オフィス・事務所
+                                    </h3>
+                                </div>
+
+                                <p class="service-card__text">
+                                    働く人の生産性やコミュニケーションを高める、
+                                    機能的でデザイン性の高いオフィスを実現します。
+                                </p>
+
+                                <span class="service-card__arrow material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+
+                        </a>
+                    </article>
+
+                    <!-- 06 -->
+                    <article class="service-card">
+                        <a href="service-consulting.html" class="service-card__link">
+
+                            <div class="service-card__image">
+                                <img src="image-service/img07.png" alt="設計・監理・コンサルティング">
+                            </div>
+
+                            <div class="service-card__body">
+                                <div class="service-card__heading">
+                                    <p class="service-card__number">
+                                        06
+                                    </p>
+
+                                    <h3 class="service-card__title">
+                                        設計・監理・コンサルティング
+                                    </h3>
+                                </div>
+
+                                <p class="service-card__text">
+                                    プロジェクトの上流から携わり、
+                                    最適な計画・設計・管理で品質を確保します。
+                                </p>
+
+                                <span class="service-card__arrow material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </div>
+
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BuildRiseの強み -->
+        <section class="service-strengths">
+            <div class="service-strengths__inner">
+
+                <div class="service-heading">
+                    <p class="service-heading__en">
+                        OUR STRENGTHS
+                    </p>
+
+                    <h2 class="service-heading__title">
+                        BuildRiseの強み
+                    </h2>
+
+                    <span class="service-heading__line"></span>
+                </div>
+
+                <div class="service-strengths__list">
+
+                    <article class="service-strength">
+                        <div class="service-strength__icon">
+                            <img src="image-service/img08.png" alt="">
+                        </div>
+
+                        <h3 class="service-strength__title">
+                            一貫対応体制
+                        </h3>
+
+                        <p class="service-strength__text">
+                            企画・設計・施工・アフターまで自社一貫体制で対応することで、
+                            品質とスピードを両立します。
+                        </p>
+                    </article>
+
+                    <article class="service-strength">
+                        <div class="service-strength__icon">
+                            <img src="image-service/img09.png" alt="">
+                        </div>
+
+                        <h3 class="service-strength__title">
+                            品質へのこだわり
+                        </h3>
+
+                        <p class="service-strength__text">
+                            見えない部分にこそ丁寧さを。
+                            安全性・耐久性・デザイン性を追求します。
+                        </p>
+                    </article>
+
+                    <article class="service-strength">
+                        <div class="service-strength__icon">
+                            <img src="image-service/img10.png" alt="">
+                        </div>
+
+                        <h3 class="service-strength__title">
+                            地域密着の安心感
+                        </h3>
+
+                        <p class="service-strength__text">
+                            地域の特性を理解したご提案と、
+                            迅速で誠実な対応をお約束します。
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ご相談から完成までの流れ -->
+        <section class="service-flow">
+            <div class="service-flow__inner">
+
+                <div class="service-heading">
+                    <p class="service-heading__en">
+                        FLOW
+                    </p>
+
+                    <h2 class="service-heading__title">
+                        ご相談から完成までの流れ
+                    </h2>
+
+                    <span class="service-heading__line"></span>
+                </div>
+
+                <ol class="service-flow__list">
+
+                    <li class="service-flow__item">
+                        <div class="service-flow__icon">
+                            <span class="material-symbols-outlined">
+                                groups
+                            </span>
+                        </div>
+
+                        <p class="service-flow__number">
+                            01
+                        </p>
+
+                        <h3 class="service-flow__title">
+                            ご相談・ヒアリング
+                        </h3>
+
+                        <p class="service-flow__text">
+                            お客様のご要望やご予算、スケジュールなどを丁寧にお伺いします。
+                        </p>
+                    </li>
+
+                    <li class="service-flow__item">
+                        <div class="service-flow__icon">
+                            <span class="material-symbols-outlined">
+                                edit_note
+                            </span>
+                        </div>
+
+                        <p class="service-flow__number">
+                            02
+                        </p>
+
+                        <h3 class="service-flow__title">
+                            企画・ご提案
+                        </h3>
+
+                        <p class="service-flow__text">
+                            ヒアリング内容をもとに、
+                            最適なプランとお見積りをご提案します。
+                        </p>
+                    </li>
+
+                    <li class="service-flow__item">
+                        <div class="service-flow__icon">
+                            <span class="material-symbols-outlined">
+                                architecture
+                            </span>
+                        </div>
+
+                        <p class="service-flow__number">
+                            03
+                        </p>
+
+                        <h3 class="service-flow__title">
+                            設計・お見積り
+                        </h3>
+
+                        <p class="service-flow__text">
+                            設計図の作成と詳細なお見積りをご提示し、
+                            内容をご確認いただきます。
+                        </p>
+                    </li>
+
+                    <li class="service-flow__item">
+                        <div class="service-flow__icon">
+                            <span class="material-symbols-outlined">
+                                handshake
+                            </span>
+                        </div>
+
+                        <p class="service-flow__number">
+                            04
+                        </p>
+
+                        <h3 class="service-flow__title">
+                            ご契約
+                        </h3>
+
+                        <p class="service-flow__text">
+                            プラン・お見積りにご納得いただいたうえで、
+                            正式にご契約となります。
+                        </p>
+                    </li>
+
+                    <li class="service-flow__item">
+                        <div class="service-flow__icon">
+                            <span class="material-symbols-outlined">
+                                engineering
+                            </span>
+                        </div>
+
+                        <p class="service-flow__number">
+                            05
+                        </p>
+
+                        <h3 class="service-flow__title">
+                            施工
+                        </h3>
+
+                        <p class="service-flow__text">
+                            安全管理と品質管理を徹底し、
+                            工程に沿って丁寧に施工します。
+                        </p>
+                    </li>
+
+                    <li class="service-flow__item">
+                        <div class="service-flow__icon">
+                            <span class="material-symbols-outlined">
+                                home
+                            </span>
+                        </div>
+
+                        <p class="service-flow__number">
+                            06
+                        </p>
+
+                        <h3 class="service-flow__title">
+                            お引き渡し・アフター
+                        </h3>
+
+                        <p class="service-flow__text">
+                            完成後の検査を経てお引き渡し。
+                            その後も長くサポートします。
+                        </p>
+                    </li>
+
+                </ol>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="service-cta">
+            <div class="service-cta__overlay"></div>
+
+            <div class="service-cta__inner">
+                <h2 class="service-cta__title">
+                    建築のご相談・お見積りはお気軽に
+                </h2>
+
+                <p class="service-cta__text">
+                    理想の空間づくりを、私たちが全力でサポートします。
+                </p>
+
+                <a href="contact.html" class="service-cta__button">
+                    お問い合わせはこちら
+
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer__inner">
+
+            <div class="footer__company">
+
+                <img src="image-top/img07.png" alt="BuildRise株式会社">
+
+                <p>
+                    〒123-4567<br>
+                    東京都渋谷区渋谷1-2-3 渋谷第一ビル5F<br>
+                    TEL：03-1234-5678　
+                    FAX：03-1234-5679
+                </p>
+
+            </div>
+
+            <ul class="footer__nav">
+                <li><a href="about.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="works.html">施工事例</a></li>
+            </ul>
+
+            <ul class="footer__nav">
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+
+            <ul class="footer__nav">
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="sitemap.html">サイトマップ</a></li>
+            </ul>
+
+            <div class="footer__sns">
+
+                <p>Follow Us</p>
+
+                <div>
+
+                    <a href="#">
+                        <img src="image-top/img12.png" alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="image-top/img13.png" alt="Facebook">
+                    </a>
+
+                    <a href="#">
+                        <img src="image-top/img14.png" alt="YouTube">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="footer__copy">
+            © BuildRise Co., Ltd. All Rights Reserved.
+        </p>
+
+        <a href="#" class="page-top">
+            PAGE<br>TOP
+        </a>
+
+    </footer>
+</body>
+
+</html>
