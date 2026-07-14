@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BuildRise(Dummy site)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="image-top/img07.png" alt="BuildRise株式会社">
+            </a>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="about.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="works.html">施工事例</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </nav>
+
+        <a href="contact.html" class="header__contact">
+            <span class="material-symbols-outlined">mail</span>
+            お問い合わせ
+        </a>
+        <button class="header__burger" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header__drawer">
+
+            <nav class="drawer__nav">
+
+                <ul class="drawer__list">
+
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="works.html">施工事例</a></li>
+                    <li><a href="staff.html">スタッフ紹介</a></li>
+                    <li><a href="news.html">お知らせ</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <div class="header__overlay"></div>
+    </header>
+    <main class="news-page">
+
+        <!-- 下層ページFV -->
+        <section class="news-hero">
+            <div class="news-hero__image">
+                <img src="./image-top/img01.png" alt="自然に囲まれたモダン住宅">
+            </div>
+
+            <div class="news-hero__overlay"></div>
+
+            <div class="news-hero__inner">
+                <div class="news-hero__content">
+                    <h1 class="news-hero__title">お知らせ</h1>
+                    <p class="news-hero__english">NEWS</p>
+                </div>
+
+                <div class="news-hero__breadcrumb">
+                    <ol class="news-hero__breadcrumb-list">
+                        <li class="news-hero__breadcrumb-item">
+                            <a href="./index.html">HOME</a>
+                        </li>
+
+                        <li class="news-hero__breadcrumb-item" aria-current="page">
+                            お知らせ
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせ一覧 -->
+        <section class="news-list">
+            <div class="news-list__inner">
+
+                <!-- タブ -->
+                <div class="news-tabs" role="tablist" aria-label="お知らせカテゴリー">
+                    <button type="button" class="news-tabs__button is-active" role="tab" aria-selected="true"
+                        data-category="all">
+                        すべて
+                    </button>
+
+                    <button type="button" class="news-tabs__button" role="tab" aria-selected="false"
+                        data-category="news">
+                        お知らせ
+                    </button>
+
+                    <button type="button" class="news-tabs__button" role="tab" aria-selected="false"
+                        data-category="event">
+                        イベント
+                    </button>
+
+                    <button type="button" class="news-tabs__button" role="tab" aria-selected="false"
+                        data-category="works">
+                        施工事例
+                    </button>
+
+                    <button type="button" class="news-tabs__button" role="tab" aria-selected="false"
+                        data-category="media">
+                        メディア掲載
+                    </button>
+                </div>
+
+                <!-- 記事一覧 -->
+                <div class="news-list__contents" aria-live="polite">
+
+                    <!-- 01 -->
+                    <article class="news-item" data-category="news">
+                        <a href="./news-detail01.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-05-20">
+                                2024.05.20
+                            </time>
+
+                            <span class="news-item__label news-item__label--news">
+                                お知らせ
+                            </span>
+
+                            <h2 class="news-item__title">
+                                コーポレートサイトをリニューアルしました
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 02 -->
+                    <article class="news-item" data-category="works">
+                        <a href="./news-detail02.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-05-10">
+                                2024.05.10
+                            </time>
+
+                            <span class="news-item__label news-item__label--works">
+                                施工事例
+                            </span>
+
+                            <h2 class="news-item__title">
+                                「シンプルモダンの家」を掲載しました
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 03 -->
+                    <article class="news-item" data-category="news">
+                        <a href="./news-detail03.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-04-28">
+                                2024.04.28
+                            </time>
+
+                            <span class="news-item__label news-item__label--news">
+                                お知らせ
+                            </span>
+
+                            <h2 class="news-item__title">
+                                ゴールデンウィーク休業のお知らせ
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="news-item" data-category="event">
+                        <a href="./news-detail04.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-04-15">
+                                2024.04.15
+                            </time>
+
+                            <span class="news-item__label news-item__label--event">
+                                イベント
+                            </span>
+
+                            <h2 class="news-item__title">
+                                5/10(土)・11(日) リノベーション相談会を開催します【予約制】
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 05 -->
+                    <article class="news-item" data-category="works">
+                        <a href="./news-detail05.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-03-27">
+                                2024.03.27
+                            </time>
+
+                            <span class="news-item__label news-item__label--works">
+                                施工事例
+                            </span>
+
+                            <h2 class="news-item__title">
+                                「築50年のフルリノベーション」を追加しました
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 06 -->
+                    <article class="news-item" data-category="news">
+                        <a href="./news-detail06.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-03-10">
+                                2024.03.10
+                            </time>
+
+                            <span class="news-item__label news-item__label--news">
+                                お知らせ
+                            </span>
+
+                            <h2 class="news-item__title">
+                                大阪支店移転のお知らせ
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 07 -->
+                    <article class="news-item" data-category="media">
+                        <a href="./news-detail07.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-02-20">
+                                2024.02.20
+                            </time>
+
+                            <span class="news-item__label news-item__label--media">
+                                メディア掲載
+                            </span>
+
+                            <h2 class="news-item__title">
+                                Webメディア「architecturephoto.net」に掲載されました
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 08 -->
+                    <article class="news-item" data-category="event">
+                        <a href="./news-detail08.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-02-01">
+                                2024.02.01
+                            </time>
+
+                            <span class="news-item__label news-item__label--event">
+                                イベント
+                            </span>
+
+                            <h2 class="news-item__title">
+                                2/17(土)・18(日) 完成見学会を開催します【予約制】
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 09 -->
+                    <article class="news-item" data-category="works">
+                        <a href="./news-detail09.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2024-01-15">
+                                2024.01.15
+                            </time>
+
+                            <span class="news-item__label news-item__label--works">
+                                施工事例
+                            </span>
+
+                            <h2 class="news-item__title">
+                                「家族がつながる二世帯住宅」を追加しました
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                    <!-- 10 -->
+                    <article class="news-item" data-category="news">
+                        <a href="./news-detail10.html" class="news-item__link">
+                            <time class="news-item__date" datetime="2023-12-28">
+                                2023.12.28
+                            </time>
+
+                            <span class="news-item__label news-item__label--news">
+                                お知らせ
+                            </span>
+
+                            <h2 class="news-item__title">
+                                年末年始休業のお知らせ
+                            </h2>
+
+                            <span class="news-item__arrow" aria-hidden="true">
+                                ›
+                            </span>
+                        </a>
+                    </article>
+
+                </div>
+
+                <!-- 該当記事なし -->
+                <p class="news-list__empty" hidden>
+                    該当するお知らせはありません。
+                </p>
+
+                <!-- ページネーション -->
+                <nav class="news-pagination" aria-label="お知らせページ">
+                    <a href="#" class="news-pagination__number is-current" aria-current="page">
+                        1
+                    </a>
+
+                    <a href="#" class="news-pagination__number">
+                        2
+                    </a>
+
+                    <a href="#" class="news-pagination__number">
+                        3
+                    </a>
+
+                    <span class="news-pagination__dots">
+                        …
+                    </span>
+
+                    <a href="#" class="news-pagination__number">
+                        8
+                    </a>
+
+                    <a href="#" class="news-pagination__next" aria-label="次のページ">
+                        ›
+                    </a>
+                </nav>
+
+                <!-- お問い合わせCTA -->
+                <section class="news-contact">
+                    <div class="news-contact__content">
+                        <div class="news-contact__icon">
+                            <span aria-hidden="true">✉</span>
+                        </div>
+
+                        <div class="news-contact__text">
+                            <p class="news-contact__description">
+                                家づくりに関するご相談・ご質問など、<br>
+                                お気軽にお問い合わせください。
+                            </p>
+
+                            <a href="./contact.html" class="news-contact__button">
+                                <span>お問い合わせはこちら</span>
+                                <span aria-hidden="true">›</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="news-contact__image">
+                        <img src="./image-top/img02.png" alt="ヘルメットを持つ建築会社スタッフ">
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer__inner">
+
+            <div class="footer__company">
+
+                <img src="image-top/img07.png" alt="BuildRise株式会社">
+
+                <p>
+                    〒123-4567<br>
+                    東京都渋谷区渋谷1-2-3 渋谷第一ビル5F<br>
+                    TEL：03-1234-5678　
+                    FAX：03-1234-5679
+                </p>
+
+            </div>
+
+            <ul class="footer__nav">
+                <li><a href="about.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="works.html">施工事例</a></li>
+            </ul>
+
+            <ul class="footer__nav">
+                <li><a href="staff.html">スタッフ紹介</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+
+            <ul class="footer__nav">
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                <li><a href="sitemap.html">サイトマップ</a></li>
+            </ul>
+
+            <div class="footer__sns">
+
+                <p>Follow Us</p>
+
+                <div>
+
+                    <a href="#">
+                        <img src="image-top/img12.png" alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="image-top/img13.png" alt="Facebook">
+                    </a>
+
+                    <a href="#">
+                        <img src="image-top/img14.png" alt="YouTube">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="footer__copy">
+            © BuildRise Co., Ltd. All Rights Reserved.
+        </p>
+
+        <a href="#" class="page-top">
+            PAGE<br>TOP
+        </a>
+
+    </footer>
+</body>
+
+</html>
